@@ -1,0 +1,12 @@
+services:
+  ayam:
+    build: .
+    restart: unless-stopped
+    ports: ["3000:3000"]
+    env_file: .env
+    environment:
+      DATA_FILE: /data/db.json
+    volumes:
+      - ayam-data:/data
+volumes:
+  ayam-data:
