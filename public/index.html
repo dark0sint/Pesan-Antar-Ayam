@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#B3121F">
+<title>Pesan Antar Ayam</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="awning" aria-hidden="true"></div>
+  <div class="bar">
+    <a href="#/" class="brand"><span class="brand-mark">🍗</span><span id="storeName">Pesan Antar Ayam</span></a>
+    <nav class="bar-actions">
+      <a href="#/riwayat" class="btn-ghost">Pesanan saya</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <h1>Digoreng saat dipesan.<br>Dikirim selagi renyah.</h1>
+    <ul class="promises">
+      <li><b>Kemasan anti-lepek</b> berlubang udara</li>
+      <li><b>Kurir langsung jalan</b> begitu ayam matang</li>
+      <li><b>Pantau live</b> dari dapur sampai depan pintu</li>
+    </ul>
+  </section>
+
+  <div class="layout">
+    <section class="menu-col">
+      <nav id="cats" class="cats" aria-label="Kategori menu"></nav>
+      <div id="menu" class="menu-grid"></div>
+    </section>
+
+    <aside id="cart" class="cart" aria-label="Keranjang">
+      <div class="cart-head">
+        <h2>Keranjang</h2>
+        <button class="icon-btn only-mobile" id="cartClose" aria-label="Tutup keranjang">✕</button>
+      </div>
+      <div id="cartBody"></div>
+    </aside>
+  </div>
+</main>
+
+<div id="view" class="view" hidden></div>
+
+<button id="cartBar" class="cart-bar" hidden></button>
+<div id="sheetRoot"></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+<script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "Pesan Antar Ayam",
+  "short_name": "Pesan Ayam",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF8F3",
+  "theme_color": "#B3121F",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
