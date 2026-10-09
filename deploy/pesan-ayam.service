@@ -1,0 +1,14 @@
+# /etc/systemd/system/pesan-ayam.service
+[Unit]
+Description=Pesan Antar Ayam
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/pesan-ayam
+ExecStart=/usr/bin/node server.js
+Restart=always
+User=www-data
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
